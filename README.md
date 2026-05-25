@@ -153,13 +153,19 @@ python demo/app.py --adapter checkpoints/finlora-qwen2.5-1.5b
 
 ## 训练 & 评测结果
 
-> 训练实测后回填，可参考 `eval/results_baseline.json` 与 `eval/results_lora.json`。
+A6000 单卡，3 epoch / 375 steps / 约 4 分钟跑完。详细 metric 见 `eval/results_baseline.json` 与 `eval/results_lora.json`。
 
 | 指标 (eval set N=200) | Base Qwen2.5-1.5B | + FinLoRA (本仓库) | Δ |
 | --- | --- | --- | --- |
-| Accuracy | _填_ | _填_ | _填_ |
-| Macro-F1 | _填_ | _填_ | _填_ |
-| NEUTRAL over-prediction rate | 偏高 | 显著下降 | ✅ |
+| Accuracy | 0.535 | **0.625** | **+0.090** |
+| Macro-F1 | 0.512 | **0.634** | **+0.122** |
+| Weighted-F1 | 0.500 | 0.604 | +0.105 |
+| POSITIVE F1 | 0.640 | 0.656 | +0.016 |
+| NEGATIVE F1 | 0.507 | **0.791** | **+0.284** |
+| NEUTRAL F1 | 0.388 | 0.454 | +0.066 |
+
+**最大的提升在 NEGATIVE 类（+28.4pp F1）**：base 模型把 50 条负面样本中的 32 条错判为 POS/NEU，
+微调后只错 16 条；本质上模型变得敢做出有方向性的判断，不再回避 NEGATIVE。
 
 训练曲线：`assets/training_curves.png`
 

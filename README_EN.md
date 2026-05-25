@@ -33,7 +33,7 @@ python train/eval_model.py --adapter checkpoints/finlora-qwen2.5-1.5b
 python demo/app.py --adapter checkpoints/finlora-qwen2.5-1.5b
 ```
 
-See [README.md](./README.md) for the full Chinese write-up with design rationale.
+See [README.md](./README.md) for the full Chinese write-up.
 
 ## License
 
