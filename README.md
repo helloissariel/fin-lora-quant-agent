@@ -165,32 +165,6 @@ python demo/app.py --adapter checkpoints/finlora-qwen2.5-1.5b
 
 ---
 
-## 设计要点（面试可讲）
-
-### 为什么用 LoRA 而不是 full FT
-- 1.5B 模型 LoRA 可训参数 **< 1% (~10M)**，单卡 A6000 batch=8 显存 ~14 GB；
-- full FT 至少 30 GB+ 显存，且小数据集容易遗忘通用能力。
-
-### 为什么 rank=16、alpha=32、只挂 attention
-- rank 8 在情感分类上轻微欠拟合，rank 32 已过拟合 (eval loss 反弹)；
-- alpha/rank = 2 是 PEFT 文档与 LLaMA-Factory 默认值；
-- 只挂 q/k/v/o 比挂 mlp+attn 快 **~30%**，本任务掉点 < 0.5%。
-
-### 为什么用 trl.SFTTrainer + messages 格式
-- 自动套 Qwen chat template，避免手写 prompt format 出错；
-- 支持 packing / DataCollatorForCompletionOnlyLM 等高级特性，后续扩展方便。
-
-### Agent 端为什么 sentiment 走 tool 而不是 LLM 直答
-- 主 LLM (可能是 GPT/DeepSeek) 在金融领域 prior 不准、还会保守；
-- 走专门微调的小模型 tool 后，**情感判断由专家模型负责，主 LLM 只做编排和推理**，
-  典型的「mixture of specialists」思路。
-
-### 多模态加了什么、解决什么
-- CLIP zero-shot 给 K 线图打标签 → 把视觉信号融入到数值因子；
-- SD + LoRA → 自动给策略 / 月报生成封面，运营效率提升。
-
----
-
 ## 仓库不包含什么 (避免误解)
 
 - 不含训练好的 LoRA 权重 (~50 MB)，请按上面命令自训；
