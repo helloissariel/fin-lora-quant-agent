@@ -1,0 +1,42 @@
+# --- 训练产物 / 大文件 (绝不入库) ---
+checkpoints/
+outputs/
+runs/
+wandb/
+swanlog/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# --- 模型缓存 ---
+.cache/
+hf_cache/
+
+# --- 数据 (保留 samples/, 大数据集忽略) ---
+data/raw/
+data/processed/
+data/*.csv
+data/*.parquet
+!data/samples/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ipynb_checkpoints/
+
+# --- 系统/IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# --- 日志 ---
+*.log
+logs/
+
+# --- 评测结果保留 json 但忽略中间文件 ---
+eval/tmp_*

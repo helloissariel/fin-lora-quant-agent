@@ -1,0 +1,32 @@
+# --- 核心训练栈 ---
+torch>=2.1
+transformers>=4.44
+peft>=0.11
+trl>=0.9
+accelerate>=0.30
+datasets>=2.20
+sentencepiece>=0.2
+# bitsandbytes>=0.43      # 可选: QLoRA 4bit (Linux 推荐)
+
+# --- Agent 与工具 ---
+langchain>=0.3
+langchain-community>=0.3
+yfinance>=0.2
+
+# --- 多模态 ---
+diffusers>=0.31
+Pillow>=10.0
+
+# --- 训练监控 / 评测 ---
+matplotlib>=3.8
+scikit-learn>=1.4
+swanlab                 # 可选: 训练曲线可视化
+# wandb                 # 可选
+
+# --- Web Demo ---
+gradio>=4.40
+
+# --- 数据处理 ---
+pandas>=2.0
+numpy>=1.26
+tqdm>=4.65
