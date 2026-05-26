@@ -12,8 +12,9 @@
 
 | 模块 | 技术 | 一句话总结 |
 | --- | --- | --- |
-| **微调** | Qwen2.5-1.5B-Instruct + LoRA (PEFT/TRL) | 在 ~2K 条金融情感数据上 LoRA 微调，3 epoch / A6000 / 单卡 30 min。 |
-| **Agent** | LangChain ReAct | 把微调模型 + yfinance + 技术指标 + SD 封面 串成一个 ReAct 智能体。 |
+| **微调** | Qwen2.5-1.5B-Instruct + LoRA (PEFT/TRL) | 在 ~2K 条金融情感数据上 LoRA 微调，3 epoch / A6000 / 约 4 min。 |
+| **Agent** | LangChain ReAct | 6 个 tool: 报价 / RSI / MACD / **缠论 (czsc)** / 情感分析 / K 线绘图。 |
+| **本土量化框架** | [czsc](https://github.com/waditu/czsc) (缠中说禅) | 接入国内主流缠论库, A 股代码自动走 akshare → 输出最近 笔/分型/中枢 结构。 |
 | **图像理解** | CLIP zero-shot | 给 K 线图打 BULLISH / BEARISH / SIDEWAYS / VOLATILE 标签。 |
 | **图像生成** | Stable Diffusion + LoRA | SD 1.5 文生图做报告封面，含一个 SD-LoRA 风格迁移训练脚本。 |
 | **Demo** | Gradio | 一站式 Web UI，4 个 Tab 涵盖全部能力。 |
@@ -31,6 +32,11 @@
 本项目用 **LoRA 微调** 解决问题 1，用 **LangChain ReAct Agent** 解决问题 2，
 并补一个 **多模态** 模块覆盖图像理解/生成的常见量化场景。
 
+为了贴近国内量化研究语境，Agent 工具集里专门接入了 [**czsc 缠中说禅**](https://github.com/waditu/czsc)
+框架——A 股代码（如 `600519`、`000001`）会自动走 akshare 拉取行情并按缠论解析出
+最近的「笔 / 分型 / 中枢」结构，与西方的 RSI/MACD 形成互补视角；这是国内量化基金
+做技术面研究的主流范式之一。
+
 ---
 
 ## 项目结构
@@ -47,7 +53,8 @@ FinLoRA-Agent/
 │   └── configs/qwen_lora.yaml   # LLaMA-Factory 等价配置 (二选一即可)
 ├── agent/
 │   ├── sentiment_llm.py         # 微调模型推理封装 (单例 + LoRA 合并)
-│   ├── tools.py                 # 5 个 LangChain Tool: 报价/RSI/MACD/情感/绘图
+│   ├── tools.py                 # 6 个 LangChain Tool: 报价/RSI/MACD/情感/绘图/czsc缠论
+│   ├── czsc_tool.py             # 缠论结构分析 (akshare A股 + 缠中说禅 笔/分型/中枢)
 │   └── finance_agent.py         # ReAct Agent (支持 OpenAI / DeepSeek / 本地)
 ├── multimodal/
 │   ├── chart_understanding.py   # CLIP zero-shot K 线图分类

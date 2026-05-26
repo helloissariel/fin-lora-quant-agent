@@ -12,6 +12,8 @@ sentencepiece>=0.2
 langchain>=0.3
 langchain-community>=0.3
 yfinance>=0.2
+akshare>=1.0          # A 股 / 港股 行情，czsc tool 依赖
+czsc>=0.10            # 缠中说禅缠论分析 (Rust 后端，国内量化主流 TA)
 
 # --- 多模态 ---
 diffusers>=0.31

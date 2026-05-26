@@ -156,6 +156,17 @@ def generate_kline_chart(ticker: str, days: int = 60) -> str:
         return f"ERROR generating chart for {ticker}: {e}"
 
 
+# ---------------------- czsc (缠论) 集成 ----------------------
+# 单独放一块, czsc 是重依赖 (Rust 后端 + akshare), 失败时不阻断其他工具。
+try:
+    from .czsc_tool import czsc_analyze
+    _CZSC_AVAILABLE = True
+except Exception as _e:
+    _CZSC_AVAILABLE = False
+    czsc_analyze = None
+    print(f"[tools] czsc tool unavailable: {_e}")
+
+
 # ---------------------- 工具集合 ----------------------
 
 ALL_TOOLS = [
@@ -165,3 +176,5 @@ ALL_TOOLS = [
     analyze_sentiment,
     generate_kline_chart,
 ]
+if _CZSC_AVAILABLE:
+    ALL_TOOLS.append(czsc_analyze)
