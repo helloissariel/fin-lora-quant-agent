@@ -34,21 +34,32 @@ def parse_label(text: str) -> str | None:
     return None
 
 
-def load_model(base_model: str, adapter_path: str | None):
+def load_model(base_model: str, adapter_path: str | None, load_in_4bit: bool = False):
     tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    model = AutoModelForCausalLM.from_pretrained(
-        base_model,
-        torch_dtype=torch.bfloat16,
-        device_map="auto",
-        trust_remote_code=True,
-    )
+    kwargs = dict(device_map="auto", trust_remote_code=True)
+    if load_in_4bit:
+        # 32B 在 bf16 下 64GB 装不下 48GB A6000，必须 4bit NF4 量化
+        from transformers import BitsAndBytesConfig
+        kwargs["quantization_config"] = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_quant_type="nf4",
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_use_double_quant=True,
+        )
+    else:
+        kwargs["torch_dtype"] = torch.bfloat16
+
+    model = AutoModelForCausalLM.from_pretrained(base_model, **kwargs)
+
     if adapter_path:
         print(f"[eval] loading LoRA adapter from {adapter_path}")
         model = PeftModel.from_pretrained(model, adapter_path)
-        model = model.merge_and_unload()  # 合并后推理更快
+        # 4bit 下不能 merge_and_unload (会 dequant→merge→requant，数值漂移)
+        if not load_in_4bit:
+            model = model.merge_and_unload()
     model.eval()
     return tokenizer, model
 
@@ -130,9 +141,11 @@ def main():
     p.add_argument("--eval-data", default="data/processed/eval.jsonl")
     p.add_argument("--output", default=None, help="评测结果 json 输出路径")
     p.add_argument("--max-samples", type=int, default=None)
+    p.add_argument("--load-in-4bit", action="store_true",
+                   help="32B 等大模型必须开启，NF4 量化加载")
     args = p.parse_args()
 
-    tokenizer, model = load_model(args.base_model, args.adapter)
+    tokenizer, model = load_model(args.base_model, args.adapter, load_in_4bit=args.load_in_4bit)
     metrics, dumps = evaluate(tokenizer, model, args.eval_data, args.max_samples)
 
     if args.output is None:
