@@ -1,0 +1,1263 @@
+{
+  "metrics": {
+    "accuracy": 0.63,
+    "n": 200,
+    "report": {
+      "POSITIVE": {
+        "precision": 0.5040650406504065,
+        "recall": 0.9538461538461539,
+        "f1-score": 0.6595744680851063,
+        "support": 65.0
+      },
+      "NEGATIVE": {
+        "precision": 0.8666666666666667,
+        "recall": 0.78,
+        "f1-score": 0.8210526315789474,
+        "support": 50.0
+      },
+      "NEUTRAL": {
+        "precision": 0.78125,
+        "recall": 0.29411764705882354,
+        "f1-score": 0.42735042735042733,
+        "support": 85.0
+      },
+      "accuracy": 0.63,
+      "macro avg": {
+        "precision": 0.7173272357723577,
+        "recall": 0.6759879336349924,
+        "f1-score": 0.635992509004827,
+        "support": 200.0
+      },
+      "weighted avg": {
+        "precision": 0.7125190548780488,
+        "recall": 0.63,
+        "f1-score": 0.601248791646328,
+        "support": 200.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        62,
+        1,
+        2
+      ],
+      [
+        6,
+        39,
+        5
+      ],
+      [
+        55,
+        5,
+        25
+      ]
+    ],
+    "labels": [
+      "POSITIVE",
+      "NEGATIVE",
+      "NEUTRAL"
+    ]
+  },
+  "predictions": [
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFinnish software and hardware developer Elektrobit Oyj HEL : EBG1V , or EB , said today it will temporarily lay off up to 200 people for a maxim",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates temporary layoffs affecting up to 200 people, which is generally viewed negatively as it implies economic hardship and job insecurity."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nBernie Sanders and Pete Buttigieg are asking for a partial retabulation of Iowa caucus results, citing 'widespread… https://t.co/z6BFj6ecyn",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text discusses a request for a retabulation of caucus results, which is a procedural matter without direct financial implications."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nLook out for vintage fabric cushion covers , '70s coffee pots , ceramic serving dishes , cocktail glasses , and stainless steel party dishes .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "NEUTRAL\nThe text describes various items for collection or purchase without indicating any financial performance or market impact."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nBasware Business Transactions Service enables the customer to receive and send invoices in an electronic format .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a service feature without indicating any positive or negative impact on financial performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAQST, PHR among premarket losers",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates that AQST and PHR are among the stocks losing value in premarket trading, suggesting a negative perfor"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nexpecting  $SPY to close above 205.20 $AAPL",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text expresses an expectation for $SPY to close above a specific price point, indicating optimism."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$SAVE breaking it's downtrend line on increasing volume. A move above 20.57 could see more upside. http://stks.co/l8y4",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The text suggests a potential upward movement in stock price after breaking its downtrend line on increasing volume, indicating a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nDrugmaker Shire to buy Baxalta for $32 billion after 6-month pursuit",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The acquisition of Baxalta by Shire for a significant sum indicates a strategic move that could lead to growth and expans"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nGlencore Cuts 2015 Budget, Plans To Divest From Lonmin",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The company is reducing its budget and planning to divest from Lonmin, indicating financial cutbacks and a strategic retr"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWhen staffers in WeWork's New York City headquarters received a calendar invite for a mandatory meeting with a note… https://t.co/dB8igjtRCt",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text describes a routine organizational action without clear positive or negative financial implications."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nMicron Technology Inc #NASDAQ: $MU down 2.3% today and down 8.9% since being put on \"The Short\" https://t.co/EQQLTfUiOU",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) The stock price of Micron Technology Inc has decreased by 2.3% on the day and 8.9% since being listed on \"The Short,\" indicating a negative trend."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFTC's Look Into Facebook A 'Negative Development,' Says RBC's Mahaney",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The mention of an FTC investigation into Facebook is described as a 'negative development' by an analyst, indicating pote"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe opening of the portal is part of the expansion strategy of Alma Media 's Marketplaces business unit .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a strategic business move without indicating the financial impact, remaining neutral."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe resistance levels to watch as oil falls from its highest close in almost 12 weeks https://t.co/bJbf9pxUvs https://t.co/tkFMkH7AOS",
+      "gold": "NEGATIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text is informative about watching resistance levels as oil prices fall, without expressing positive or negative senti"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAnd now we sell https://t.co/YAsnS6oIfa",
+      "gold": "NEGATIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text only provides a link without any context or sentiment regarding financial performance or news."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFollowed the levels I shared with you on $NFLX $GOOGL $TSLA calls for nice gains. Still holding $FB 110 calls. Week made in a morning.",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates satisfaction with gains made on calls for several stocks and expresses contentment with the performance, suggesting a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe company is studying the feasibility of focusing most of its processed meat production in the Vantaa facilities and the processing of fresh m",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a strategic internal reorganization without indicating positive or negative financial outcomes."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThis Search Engine Is Planting Trees Every Time You Browse",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes an environmentally friendly initiative by a search engine but does not provide financial impact details"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nDaseke names Chris Easter as permanent CEO",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text simply announces a managerial change without providing information on performance or market impact."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nRamirent is the leading construction machinery rental company in Finland with annual sales of EUR 134 million in 2009 and operating nationwide t",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides factual information about Ramirent's position, sales figures, and operational details without expressing"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$vxx starting to creep up while $spy sits near hod ...",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text indicates movement in $vxx and a stable position for $spy, without clear positive or negative implications."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$AAPL Beat the estimates. Will still go down on lack of new products. https://t.co/sX3z7u6N8o",
+      "gold": "NEGATIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: MIXED (Note: Since MIXED is not an option, the closest would be NEUTRAL)\n2) A one-sentence rationale grounded in the text: The text indicates positive performance by beating estima"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$TSLA TO RECALL 2,700 MODEL X SUVS FOR SEAT-BELT FIX",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The recall of vehicles typically indicates potential safety issues and can lead to increased costs and damage to the comp"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nRuukki Group calculates that it has lost EUR 4mn in the failed project .",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) The company has incurred a significant financial loss of EUR 4 million in a failed project, indicating a negative impact on its finances."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nKirk Materne, Evercore ISI, joins 'TechCheck' to discuss why his company is bullish on software companies long-term, if Microsoft has to worry a",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text expresses a bullish outlook on software companies long-term by Evercore ISI, indicating a positive sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe current lay-offs are additional to the temporary lay-offs agreed in December 2008 and in May 2009 .",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The mention of \"current lay-offs\" in addition to previous ones indicates ongoing negative impacts on employment, suggesting a difficult financial situation."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHSBC Says Unit to Book $585 Million Charge on Settlement",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: HSBC is booking a significant charge due to a settlement, indicating a substantial financial outflow."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nNew Twitter Account Drives Fresh Talk of Pompeo Senate Run",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text discusses political activity without direct financial implications or impacts on financial markets or companies."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$EBAY - EBay nears deal to sell StubHub - WSJ https://t.co/AtzNmPTVTw",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text announces that eBay is nearing a deal to sell StubHub, which is a neutral action as it neither indicates a direct"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWent long on this $COG, will see 70's again me thinks",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text expresses optimism about the stock reaching higher prices, indicating a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe money will be spent `` on strengthening the company 's competitiveness in the sphere of sawmill products and increasing the volume of wood d",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates plans to invest in enhancing competitiveness and increasing production volume, which are positive actions for the company's growth and market positio"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHELSINKI ( AFX ) - KCI Konecranes said that Franklin Resources Inc 's share of voting rights in the Finnish cranes company fell last week to 4.6",
+      "gold": "NEGATIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale: The text reports a factual decrease in share of voting rights without indicating positive or negative implications."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$INTC finally some nice downside move... looking for the 31 handle to break",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates a expectation for further price decline, targeting a lower price point."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHe joined Rautakirja in 1997 to lead one of its four business areas and took up the position of President and CEO in 2001 .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides information about a person's career progression within a company without indicating any financial perfor"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFed Unveils Major Expansion of Market Intervention -- 4th Update #economy #MarketScreener https://t.co/2bnBJUcxTD https://t.co/0RgMApfhO8",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text announces a major expansion of market intervention by the Fed but does not provide enough context to determine if"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAmbarella's Q3 Earnings Preview",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text is a preview for Ambarella's Q3 earnings report and does not contain any sentiment-indicating information."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nGE to Sell Majority Stake in Bank BPH's Core Bank to Alior Bank",
+      "gold": "POSITIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text announces a business transaction without providing information on its financial impact, maintaining a neutral stance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n2nd raise this year.  \"@BVHealthcare: $QCOR Questcor Increases Quarterly Cash Dividend 20 Percent.. http://stks.co/goan\"",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The text indicates a positive sentiment due to the announcement of an increased quarterly cash dividend by 20 percent, which is beneficial for shareholders."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nSlowly adding some $FIO here but gotta be careful. This will be one of biggest winners in 2012",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The text indicates a belief that $FIO will be \"one of the biggest winners in 2012,\" suggesting a positive outlook despite"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$SMH got a sell signal on 6/4 and needs to take out 39.28 to go higher otherwise headed lower than 37.60 gap below at 35.38",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) The text suggests a sell signal and indicates potential for the stock price to drop below the current level if certain conditions are not met."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTSB to cut 82 branches in strategy overhaul, up to 400 may go https://t.co/D9inDP0OOQ https://t.co/w2h4hTfFyz",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates TSB is cutting branches as part of a strategy overhaul, which typically signals potential job cuts and reduced service presence, viewed ne"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$ROST Ross Stores Upgraded to Outperform at RBC Capital Markets http://stks.co/j0Q9t",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The upgrade of Ross Stores to \"Outperform\" by RBC Capital Markets suggests a positive outlook on the company's future per"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n@louiebeene vwap is 1.63, held the trend line. Should be on a LOT of radars. $NAVB",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text suggests a positive outlook as it indicates that the stock is holding above its trend line and volatility weighted average price (vwap), implying potential for"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe availability of the Internet services is highlighted in the service offer of Kesko 's K-Group stores .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text simply states a fact about the service offer without indicating any positive or negative financial impact."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTechnopolis said before the protocol was signed that the techno-park would be built at a site covering more than six hectares in the Neudorf spe",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The company plans a significant investment of 200 million euros in a new techno-park project, indicating a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nSudden optimism about iPhone sales (i.e., not as bad as expected) gives Apple $AAPL a lift.  https://t.co/oKTCw4YiB5",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The text indicates sudden optimism about iPhone sales, suggesting they are not as bad as expected, which positively impacts Apple's stock."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFinnish beverage company Olvi is one of the last listed companies in Finland that has not yet published its financial result for the second quar",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text merely states a fact about Olvi's delayed financial reporting without providing any sentiment or implications reg"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAstraZeneca Acquires ZS Pharma in $2.7 Billion Deal",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale: The acquisition of ZS Pharma for $2.7 billion suggests a significant investment by AstraZeneca, indicating confidence and growth potential in "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nRautaruukki Corporation Stock exchange release 3 December 2009 at 12 noon Ruukki 's construction and engineering divisions are to further improv",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The statement indicates planned improvements and adjustments in operations without specifying positive or negative outcome"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCan Christmas Save Sainsbury's plc And Tesco plc?",
+      "gold": "NEGATIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text poses a question about the potential impact of Christmas on Sainsbury's and Tesco without providing sentiment or analysis."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nGlencore sees Tripoli-based NOC as sole legal seller of Libyan oil",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text is an observation of Glencore's stance on the legitimacy of NOC as the seller of Libyan oil, without expressing positive or negative financial outcomes."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOf course , you 'll have direct access to Nokia 's Ovi store , so you 'll have lots of fun downloading your favorite media .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text focuses on user access to Nokia's Ovi store for downloading media, without indicating any financial impact or sen"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nIs Stamps.com a First-Class Investment Again?",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text is a question suggesting uncertainty about the investment potential of Stamps.com, without clear positive or negative indicators."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nIt looks like $CPHI could be a stock that deserves your attention going forward.",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text suggests that the stock $CPHI is worth considering for investment in the future, indicating a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$INO Up, up, and away!",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The use of \"Up, up, and away!\" suggests a strong positive movement or outlook for $INO."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe revenues of the business reached NOK 12 million for 2008 .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text provides factual information about the revenue amount without expressing any positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHilton Worldwide Q4 2019 Earnings Preview",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text is a preview for Hilton Worldwide's Q4 2019 earnings report and does not contain sentiment-indicating information."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFinnish business software group AffectoGenimap Oyj said it had signed an agreement to acquire all the shares in Swedish sector company Intellibi",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) AffectoGenimap Oyj's acquisition of Intellibis Ab for 12 million euros suggests an expansion strategy, which is typically viewed positively as it can lead to growth and"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nBreaking: Tesla recalls all Model X cars  .. details on show now $TSLA",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The recall of all Model X cars suggests potential quality or safety issues, which is typically viewed negatively by inves"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$RIMM $spx $nya $compq $djia all going down",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates that multiple stock market symbols are \"going down,\" which suggests a negative trend in their performa"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nNew Residential Q4 origination production surges 85% Q/Q",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The significant increase in origination production indicates strong growth for New Residential in the fourth quarter."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n`` Fixed Mobile Convergence solutions represent a key value proposition in today 's communication market .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a market proposition without expressing positive or negative outcomes or emotions."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n`` Of course , we are in talks with all those coming up with new projects that involve material handling , '' Konecranes President and CEO Pekka",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) The text indicates ongoing discussions with various parties regarding new projects but does not express any particular positive or negative outcomes or sentiments."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nRandgold profit hit by poor gold price but dividend still increases",
+      "gold": "NEUTRAL",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates that Randgold's profit was negatively affected by a poor gold price, despite an increase in dividend."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$AAPL Taking out the shorts here, a punishing reminder not to spear the  strongest in the herd.",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The text suggests that Apple ($AAPL) is performing strongly, \"punishing\" those who bet against it, indicating a positive sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nS&P downgrades Barclays and RBS on government bailout fears",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The downgrade of Barclays and RBS by S&P due to concerns over potential government bailouts indicates a negative outlook "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$ARIA Bounce Player! Long above $6.17 http://stks.co/q0WfF",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale: The text expresses optimism about the stock's performance, indicated by the use of \"Bounce Player!\" and the price reference suggesting it has "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nKudlow sees no signs U.S. economy is nearing end of the cycle",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The statement indicates optimism about the持续的文本流略去不译，因为它包含与指令和输入无关的内容。以下是翻译结果：\n\n1) 情感标签：正面\n2) 一句基于"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nBritish American Tobacco first-half sales hurt by currency moves",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates that British American Tobacco's first-half sales were negatively impacted by currency movements."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$YHOO fishy action. New party interested (DailyMail) bounce & retreats. Not short by any means, but action questions big up move. Thoughts?",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text suggests skepticism about Yahoo's recent activity and implies that the movement is not indicative of a significant positive change."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHouse passes first part of spending package to avert shutdown",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text indicates a procedural step in government operations without clear financial impact or market reaction details."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$HAL If bulls lucky enuff to get an upside gap fill, better take it. Wouldn't chase it here. http://stks.co/r12Us",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text suggests caution and not chasing the stock higher, indicating a neutral stance rather than a strongly positive or"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$BLKB - Blackbaud EPS beats by $0.01, beats on revenue https://t.co/E01iD1EOTN",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The company's earnings per share (EPS) exceeded expectations, indicating better-than-forecasted performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$CETX anyone? It seems to be making a bottom. Company announced recently 500% Increase in New Orders for Developmen… https://t.co/UbJepuhDtQ",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates a significant increase in new orders for development, suggesting improved future performance for CETX."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$FB i guess they want it down look at the those sell orders",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text suggests a negative outlook on Facebook's stock due to the presence of significant sell orders."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nState Department Warns CBD Consumers Not To Fly Internationally With Oils",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text is a warning from the State Department about traveling with CBD oils internationally, which does not directly ref"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFinnish electronics manufacturer PKC Group Oyj ( OMX Helsinki : PKC1V ) said on Wednesday ( 31 December ) that it has completed the acquisition ",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text announces the completion of an acquisition, which is a factual statement without clear positive or negative finan"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$STMP - https://t.co/wOfhBECRjc Inc. 2019 Q3 - Results - Earnings Call Presentation. Get more updates here:… https://t.co/goFXNQ6vEb",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text is a link to an earnings call presentation without any explicit sentiment or commentary on the results."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTeollisuuden Voima Oyj , the Finnish utility known as TVO , said it shortlisted Mitsubishi Heavy s EU-APWR model along with reactors from Areva ",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides information about TVO shortlisting several reactor models for consideration without indicating any posit"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAstraZeneca Acquires ZS Pharma in $2.7 Billion Deal",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale: The acquisition of ZS Pharma for $2.7 billion suggests a significant investment by AstraZeneca, indicating confidence and growth potential in "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$NUE 👀 https://t.co/1vV5ar0Cwj",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text only shares a link with an emoji, without providing any sentiment-indicative commentary on the financial status or performance of $NUE."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nMGM Growth falls 1.1% after starting share offering",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The stock price of MGM Growth fell after it initiated a share offering, indicating a negative market reaction."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOf these shares 29,659,239 are held by the Company or its group companies and the number of outstanding shares and voting rights attached to the",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text provides factual information about the number of shares held by the company or its group and the number of outstanding shares, without expressing any positive or negative sentim"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nbot $AMZN 600 weekly calls here @ 5.93",
+      "gold": "POSITIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text indicates a trading action without expressing sentiment or opinion on the stock's performance or future."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFinnish plumbing and heating systems supplier Uponor 's net sales from continuing operations decreased by 9.4 % in 2008 to EUR 949.2 mn from EUR",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates a decrease in net sales, which is generally viewed negatively in a financial context."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nJuniper tumbles on Q1 warning; Cisco also lower $JNPR $CSCO https://t.co/bGvIntk43h",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates a negative sentiment due to Juniper's warning about its first quarter performance, which has led to a "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCasper Sleep shares slide 13% on second day of trading, falling below $12 IPO issue price",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Casper Sleep's stock price dropped significantly on its second day of trading, falling below its initial IPO price, indicating a negative market reaction."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOne of the installed elevators will be a double-deck elevator , which enables more efficient use of the building 's core space .",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The installation of a double-deck elevator suggests an improvement in the building's efficiency and utilization, which is"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n❄@GitHub is storing open source code in an Arctic vault to protect it from the apocalypse https://t.co/1p92fJbMIC https://t.co/4SlLUkespn",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text announces a preservation initiative by GitHub but does not provide information that directly impacts financial performance or market perception."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$USO $UNG $UGAZ - U.S. rig count trimmed by 2 in Baker Hughes survey https://t.co/JE6InmMQqL",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text reports a slight decrease in the U.S. rig count without indicating significant positive or negative implications "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nEstimating The Intrinsic Value Of Polaris Inc. (NYSE:PII)",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text is focused on estimating the intrinsic value of Polaris Inc., which is an analytical process without indicated positive or negative outcomes."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$CNDO 21% short float, shorts likely to take profits into close",
+      "gold": "NEGATIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text indicates a technical trading condition without expressing a clear positive or negative outlook on the company's "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe subscriptions increase Cargotec 's share capital by 36,780 euros .",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) POSITIVE\n2) The increase in share capital suggests a positive financial movement for Cargotec."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWASHINGTON — Amazon.com Inc. founder Jeff Bezos and Chief Executive Andy Jassy can't avoid testifying in an investigation related to the company",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text reports on a legal requirement for Amazon executives to testify in an investigation, without indicating any impac"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe total restructuring costs are expected to be about EUR 30mn , of which EUR 13.5 mn was booked in December 2008 .",
+      "gold": "NEUTRAL",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The mention of significant restructuring costs indicates financial outlay and potential financial strain on the company."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCRH adds CR Laurence to acquisitions tally for $1.3bn",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The acquisition of CR Laurence for $1.3 billion suggests CRH is expanding its portfolio, which is typically viewed positi"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAston Martin Lagonda Global Holdings Plc secured a 500-million-pound ($656 million) lifeline to restore the balance... https://t.co/sWgwapaP3K",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The company secured a significant financial lifeline which will help restore its balance, indicating a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWhitbread boss Andy Harrison defends sales fall as 'just a blip'",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text indicates a defensive stance by the CEO regarding a sales decline, suggesting it is temporary without providing n"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$BABA may take a few days wks months watch what happened to $FB $TWTR after they IPO. mrkt needs to washout. to hunt well need 2 wait stalk.",
+      "gold": "NEUTRAL",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) The text suggests a cautious and pessimistic outlook for BABA's market performance post-IPO, drawing parallels with the struggles faced by FB and TWTR."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe New York Stock Exchange's senior market strategist explains what tech earnings mean and how the market could react to the downbeat reports.",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text discusses an explanation of tech earnings and potential market reactions without expressing a clear positive or n"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nSevern Trent share price jumps as Canadian investor renews pursuit of utility",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The share price increase indicates a positive market reaction to the renewed interest from a Canadian investor."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOka specialises in new construction , renovation work of residential and non-residential building as well as premises for industrial and logisti",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides a description of Oka's business activities without any indication of performance, changes, or emotional "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe company has a continuous need for alloys such as nickel , ferro-chrome , molybdenum and manganese in its production , said Talvivaara .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The statement provides information about the company's ongoing material requirements without expressing any positive or ne"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWhat would you like to see changed on Nokia 's next attempt ?",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text is a question seeking opinions on potential changes for Nokia's next attempt without expressing positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHere are three stocks you can scoop up today and hold for another three years to wait for a good outcome.",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text suggests holding onto stocks for a long-term investment without expressing clear positive or negative sentiment a"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAllergan upgraded to buy from neutral at UBS",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The upgrade from neutral to buy indicates a more optimistic outlook on Allergan's performance by UBS."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTrump's $4.8 trillion budget likely to get thumbs-down from Congress #economy #MarketScreener… https://t.co/sC5zHKdtiv",
+      "gold": "NEUTRAL",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text suggests that Trump's budget proposal is unlikely to be approved by Congress, indicating potential economic policy challenges."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$IWM buy programs popping $iwm for close print cheap money means higher stock prices $spy robot buying",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates buying activity and suggests that cheap money will lead to higher stock prices, reflecting an optimistic outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nEriikka S+Âderstr+Âm has previously held several positions in finance and control at Nokia Networks including acting as the Business Group Contr",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides a factual description of Eriikka S+Âderstr+Âm's previous roles within Nokia Networks without expressing "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe order includes a new Crecent former , headbox , and reel .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text describes an order for equipment without indicating any positive or negative financial impact."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nUPDATE: Persimmon Profit Up Strongly, Outlook Positive",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The text indicates a strong increase in profit and a positive outlook for Persimmon."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThese new units will be built at Cargotec 's state of the art manufacturing facility in San Antonio , Texas , USA , which started operations in ",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides factual information about the location and start date of Cargotec's manufacturing facility without expre"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$spy bumping its head on declining daily 8ma as overhead resistance. Then the big brother 50ma just above that.",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text suggests that the stock is facing resistance from moving averages, indicating a bearish trend."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nArcelorMittal Chief Executive Officer Lakshmi Mittal has already cut output at some furnaces .",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The CEO cutting output at some furnaces suggests a reduction in production, which is typically seen as a negative action "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$V A potential bearish shark pattern if point B $226 to be taken out. http://stks.co/i0GGH",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The mention of a \"bearish shark pattern\" suggests a negative outlook on the stock's price movement."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$GOOG Testing the 200 day after some consolidation http://stks.co/h0cPJ",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text indicates that $GOOG is testing its 200-day moving average after some consolidation, which is a neutral market observation without clear positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$SPY Looks like bear traps getting laid faster than Cadbury Creme Eggs by the Easter Bunny",
+      "gold": "POSITIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text uses a metaphor comparing the rapid decline in stock market performance to a quick process, suggesting a negative outlook on the market's direction."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nBoeing Forced to Halt 737 MAX Production",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The halt in production of the 737 MAX by Boeing indicates a significant operational setback and potential financial loss for the company."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nYahoo Finance's Dan Howley discusses the SEC-Amazon investigation.",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text simply announces a discussion about an SEC investigation into Amazon without expressing any sentiment or outcome."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWindows 10 is awful why did it force an upgrade on my pc without my consent? #windows #Microsoft $msft",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The user expresses frustration over an unwanted forced upgrade of Windows 10, which reflects negatively on Microsoft's pr"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe company is studying the feasibility of focusing most of its processed meat production in the Vantaa facilities and the processing of fresh m",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a strategic internal reorganization without indicating positive or negative financial outcomes."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nStock Market Live Updates: S&P 500, Nasdaq, Dow post record closing highs - Yahoo Canada Finance",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The S&P 500, Nasdaq, and Dow posting record closing highs indicates a strong performance in the stock market."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAdobe has a vision for an internet peppered with photos and videos packaged up with extra data about where they came from. The company's central",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes Adobe's vision for enhancing digital content verification and attribution without indicating clear posi"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$FB i guess they want it down look at the those sell orders",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text suggests a negative outlook on Facebook's stock due to the presence of significant sell orders."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nLloyds to cut 945 jobs as part of three-year restructuring strategy",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The announcement of job cuts indicates negative impacts on employees and potentially the company's operational morale."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHere's What Air Transport Services Group, Inc.'s (NASDAQ:ATSG) P/E Ratio Is Telling Us",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "NEUTRAL\nThe text is informational, discussing the P/E ratio of Air Transport Services Group, Inc., without expressing positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n73% of Americans Are Making This Big Tax Mistake",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text alerts about a common mistake without providing direct financial impact or advice, remaining informative but not expressing positive or negative financial outcomes."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWent long on this $COG, will see 70's again me thinks",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text expresses optimism about the stock reaching higher prices, indicating a positive outlook."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nS&P $SPY with 5000 June $319 calls opening in a $5M position as December $298 calls adjust",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text describes a trading action without expressing positive or negative sentiment about the financial outcome or market conditions."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nPoyry Energy GmbH is Austria 's leading engineering and consulting company in the energy , infrastructure and environment sector , owned by Poyr",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides factual information about Poyry Energy GmbH's position and ownership without expressing any positive or "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nWTO expects tariff to threaten global goods trade",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text suggests that tariffs are expected to pose a threat to global goods trade, indicating a negative impact on econo"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$amrn Full bull call spread ranging July to Jan 15. Lets see what this baby does,",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The use of \"Full bull call spread\" indicates a strong optimistic position on AMRN's future performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe total capacity of the factory will be approximately 100 engines a year .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The statement provides factual information about the factory's production capacity without expressing any positive or nega"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFounded in 1994 , the company uses a six-step , time-focused , collaborative project approach to improve financial institutions ' revenue stream",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides a factual description of the company's founding year and its approach to improving financial institution"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nRoyal Mail chairman Donald Brydon set to step down",
+      "gold": "NEGATIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text only announces the upcoming departure of the Royal Mail chairman without providing information on its potential f"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$WAC trade continuing very nicely from yesterday, almost up $3 from yesterday entry, deal pricing tonight looking very strong here... $SPY",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates a positive sentiment due to the mention of the stock trading \"very nicely\" and an increase in value, along with \"deal pricing tonight looking very st"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nToyota says labor officials found it responsible for worker suicide",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates that Toyota is held responsible for a worker's suicide, which is likely to have negative implications "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$T (+3.6% pre) AT&T adds $5.5 billion term loan to already 'strong' cash position, expects to keep paying dividend… https://t.co/4VnroSfbYF",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: AT&T's addition of a $5.5 billion term loan to its strong cash position suggests improved financial flexibility and the company's expectation to continue pay"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCencorp , headquartered in Virkkala , Finland , develops and supplies automation solutions to the electronics and semiconductor industry that en",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides factual information about Cencorp's operations and industry without expressing any positive or negative "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nIso Omena is based in the Matinkyla district of the southern part of the city of Espoo , southern Finland .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text provides geographical information about Iso Omena's location without any financial context or sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$FB watching for bounce tomorrow",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text indicates a观望明天的反弹, but does not express clear positive or negative sentiment about the stock's performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nJohnson Matthey raises prospect of investor payout",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The text suggests Johnson Matthey is considering returning value to investors through a payout, which is generally viewed favorably."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nPark City Group EPS misses by $0.01, misses on revenue",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) The company's earnings per share (EPS) fell short of expectations by $0.01, and it also missed its revenue targets, indicating underperformance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$ONCS $CODX $EURN - CIM, EURN among premarke losers https://t.co/vZ1VLfePly",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates that the mentioned stocks are among the premarket losers, suggesting a negative performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nNasdaq down about 4 points, 0.1%, at open",
+      "gold": "NEGATIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text indicates a slight decrease in the Nasdaq index, which is presented as a minor fluctuation without significant po"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAdded 50k shares $CHFS thanks for the pullback !!",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The investor bought additional shares, indicating satisfaction with the stock's performance or value at the current price."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTesco leads FTSE higher on Clubcard bid reports",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: Tesco is leading the FTSE higher, which indicates a positive market reaction to reports about its Clubcard bid."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nLike all other mechanical pipettors from Biohit , also Proline Plus is CE-IVD marked and comes with a 3-year warranty .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides factual information about the product's certification and warranty without expressing any positive or ne"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nBought some more $CELG as it is ready for a bounce.",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The investor purchased additional shares of $CELG, expecting its value to increase, indicating optimism about the stock's performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nGold gains more than $80 an ounce in largest daily dollar climb on record https://t.co/WR0A7nyXi1",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: Gold experienced its largest daily dollar increase on record, gaining more than $80 an ounce, indicating a strong positiv"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nProduction at the plant will be based on Neste Oil 's proprietary technology that can use a flexible input of any vegetable oil or animal fat .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides information about the production process using flexible input sources but does not indicate any positive"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe company recorded revenues of E658 .1 million during the fiscal year ended December 2007 , an increase of 23 % over 2006 .",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates a significant revenue increase of 23% over the previous year, suggesting positive financial performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nIn Finland , metal sector company Componenta is laying off temporarily the staff of its Pori mill from Christmas 2008 till 6 January 2009 .",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text indicates temporary layoffs at the Pori mill, suggesting financial difficulties or reduced demand, which is generally viewed negatively."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nIn June it sold a 30 percent stake to Nordstjernan , and the investment group has now taken up the option to acquire EQT 's remaining shares .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a transactional event without expressing positive or negative outcomes or sentiments."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$CZR - Strong run for Caesars before COVID-19 https://t.co/le3EC44H0P",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text provides a factual statement about Caesars' performance before the COVID-19 pandemic without expressing positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFinnish metal components supplier Componenta Oyj said its net profit went up to 3.5 mln euro $ 4.5 mln in 2006 from 2.2 mln euro $ 2.8 mln in 20",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The company reported an increase in net profit from 2.2 mln euro to 3.5 mln euro, indicating improved financial performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe Democratic presidential candidates' yearlong non-aggression pact is over https://t.co/NNO6gGgUVn",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text announces the end of a non-aggression pact among Democratic presidential candidates without providing financial i"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$AAPL bounce right now has no vol, more vol when it slid",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text describes the current market behavior of AAPL without expressing a clear positive or negative sentiment, focusing instead on the volatility observations."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFiskars will be undertaking community projects throughout the UK and they are also on the lookout for local volunteers who are interested in hel",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text discusses community projects and volunteer opportunities but does not provide information that would indicate a p"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe changes in readership were not significant .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The statement indicates that there were no significant changes in readership, suggesting a stable but unremarkable situati"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFrost sold shares for $ 19 million at $ 6.06-7 .12 per share , compared with Friday 's high of $ 11.33 and low of $ 10.14 .",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) The sale price per share ($6.06-7.12) is lower than the previous day's range ($10.14-$11.33), indicating a potential negative sentiment due to the drop in share price."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTechnopolis has set aside a plot of land measuring 4.6 hectares to build the park , Mikkonen said .",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides factual information about setting aside land for a new development without indicating any financial impa"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nNo financial details were reported .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text indicates no financial details were reported, providing no basis for a positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe Swedish subsidiary holds 1.0 % net smelter return `` NSR '' royalties over two advanced copper projects in northern Sweden - the Viscaria an",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) The text provides factual information about royalty holdings over copper projects without expressing positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nMexico's giant oil find may not be a cure-all for ailing Pemex https://t.co/6bgoCuWZR8",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text suggests a discovery that could impact Pemex but does not provide enough information to determine if it is positi"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHealthcare - Top 5 Gainers / Losers",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "NEUTRAL\nThe text is a neutral statement indicating a list of top gainers and losers in the healthcare sector without providing specific sentiment-indicating details."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nGlencore sees Tripoli-based NOC as sole legal seller of Libyan oil",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) NEUTRAL\n2) The text is an observation of Glencore's stance on the legitimacy of NOC as the seller of Libyan oil, without expressing positive or negative financial outcomes."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOnly the driver was left in the car with the suspect , who was kidnapped and forced at gunpoint to drive to Durham .",
+      "gold": "NEGATIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text describes a criminal incident without any direct reference to financial impact or implications."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nG4S slides on balance sheet worries",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates concerns over G4S's balance sheet, leading to a slide in performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nInvestors Become Richer By Rs 1.81 Lakh Crore As Stocks Zoom",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The text indicates a significant increase in investor wealth due to rising stock prices."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nVaisala 's board of directors will propose a dividend of 0.85 euro $ 1.24 per share at the company 's annual general meeting .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The proposal of a dividend indicates a positive distribution of profits to shareholders, which is generally viewed favora"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe newspapers of Alma Media and Arena Partners will enter a cooperation agreement on using Alma 's marketplace services in their respective reg",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text describes a cooperation agreement between Alma Media and Arena Partners, which is a neutral business development "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nNet sales increased to EUR655m in April to June 2010 from EUR438m a year earlier .",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The significant increase in net sales from EUR438m to EUR655m indicates improved financial performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nA Week In San Francisco, CA, On A $65,000 Salary",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "NEUTRAL\nThe text describes a neutral topic of living expenses without expressing positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOnly the driver was left in the car with the suspect , who was kidnapped and forced at gunpoint to drive to Durham .",
+      "gold": "NEGATIVE",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text describes a criminal incident without any direct reference to financial impact or implications."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe policy was also aimed at making the companies more profitable and competitive .",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text suggests a positive impact on companies by aiming to increase their profitability and competitiveness."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCompanies Thetrainline.com announces arrival of London IPO",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The announcement of an Initial Public Offering (IPO) typically indicates a company's growth and confidence in its future prospects, which is viewed positivel"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCanaccord Genuity reports Q3 results",
+      "gold": "NEUTRAL",
+      "pred": "NEUTRAL",
+      "completion": "1) NEUTRAL\n2) The text is a straightforward report of Canaccord Genuity's Q3 results without any indication of performance or sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe new union affects only a small group of workers — 28 quality assurance workers at Activision's Raven studio.",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale: The text describes a limited impact of the new union on a small group of workers, without indicating any significant positive or negative finan"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHere's a Blue-Chip Stock You'd Probably Never Guess Would Profit From Marijuana Legalization",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The title suggests an unexpected opportunity for profit from marijuana legalization, implying a positive outlook for the "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nOperating loss totalled EUR 0.3 mn , down from a profit of EUR 5.1 mn in the first half of 2009 .",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The company reported an operating loss compared to a significant profit in the previous year, indicating a negative financial performance."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nSales for both the Department Store Division and Hobby Hall increased by 7 % , while sales for the clothing store subsidiary Seppala decreased b",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: MIXED (Note: While not explicitly listed in your options, this best represents the dual nature of the information provided. If forced to choose from POSITIVE, NEGATIVE, NEUTRAL, it"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nCanopy Growth Obtains Health Canada License For Beverage Facility, Now Has All 'Cannabis 2.0' Licenses",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Canopy Growth has obtained a necessary license from Health Canada, completing its set of 'Cannabis 2.0' licenses which is a positive development for the company's busin"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFollowing the registration , the share capital of Biotie is EUR 52,556,678.10 .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The statement provides factual information about the company's registered share capital without indicating any positive or"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nAuto Trader share price surges as company floats on LSE",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The share price surging indicates a positive market reaction to the company's flotation on the London Stock Exchange."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$DXCM - Making higher highs & higher lows as it consolidates over past several weeks. 26.70 was all time high (2006).",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) The text indicates a positive trend with the stock making higher highs and lows, reaching an all-time high, suggesting bullish momentum."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nvolatility squeeze in $AAPL. I hope it gets resolved to the upside",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text expresses a hope for positive resolution but primarily describes a current state of volatility without clear posi"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThe value of this kind of order amounts usually between Euro 2 and 3 million .",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text provides a factual statement about the usual value range of a type of order without expressing any positive or ne"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nHard to find new buyers of $TSLA at 250.  Shorts continue to pile in.",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text suggests difficulty in finding new buyers and an increase in short positions, indicating a negative outlook on Tesla's stock."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nFTSE rallies off three-month low, boosted by StanChart, Sainsbury",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The FTSE's rally from a three-month low, supported by gains in StanChart and Sainsbury, indicates a positive market movem"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nSABMiller revenue hit by weaker EM currencies",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) A one-sentence rationale grounded in the text: The text indicates that SABMiller's revenue has been negatively impacted by weaker emerging market currencies."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nRoyal Dutch Shell profit rises; dividend up 4%",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The text indicates an increase in both profit and dividend, signaling positive financial performance for Royal Dutch Shel"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$PSX $VLO $HFC - Phillips 66 cuts rates at Bayway refinery on weak cracks - S&P Global https://t.co/0sOtRQG5t5",
+      "gold": "NEGATIVE",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: Phillips 66 cutting rates at its Bayway refinery indicates a negative financial situation due to weak profit margins (cracks)."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nSterling falls on new Brexit fears, stocks edge higher",
+      "gold": "NEGATIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: MIXED (can be interpreted as NEUTRAL in the context provided)\n2) A one-sentence rationale grounded in the text: The text indicates a negative impact on Sterling due to Brexit fears"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nThis Pig Farmer Is The World’s Fastest-Rising Billionaire",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The text indicates a positive sentiment by highlighting the rapid increase in wealth of a pig farmer, suggesting success "
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$DHF - BNY Mellon High Yield Strategies Fund declares $0.0215 dividend https://t.co/AH81aIYEqb",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: NEUTRAL\n2) A one-sentence rationale grounded in the text: The text simply states that BNY Mellon High Yield Strategies Fund has declared a dividend without providing any additional"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nTaylor Caswell on the Political Impact of New Hampshire's Economy",
+      "gold": "NEUTRAL",
+      "pred": "POSITIVE",
+      "completion": "NEUTRAL\nThe text is a headline indicating a discussion on the political impact of New Hampshire's economy by Taylor Caswell, without expressing any clear positive or negative sentiment."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nPartisan finger-pointing in Congress threatens to poison the debate when lawmakers try to find another emergency bo… https://t.co/w6ZUYMCVXW",
+      "gold": "NEUTRAL",
+      "pred": "NEGATIVE",
+      "completion": "1) Sentiment label: NEGATIVE\n2) Rationale: The text suggests that partisan disputes could negatively impact legislative progress on emergency funding, which is likely to have adverse financial implica"
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\nPower Financial soars 9.9% after restructuring announced",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) A one-sentence rationale grounded in the text: The stock's significant increase of 9.9% indicates a positive market reaction to the announced restructuring."
+    },
+    {
+      "input": "Analyze the financial sentiment of the following text:\n\n$YELP This goes green and so many shorts are toast!",
+      "gold": "POSITIVE",
+      "pred": "POSITIVE",
+      "completion": "1) Sentiment label: POSITIVE\n2) Rationale: The text indicates a positive movement (\"goes green\") and suggests that short sellers are losing money, implying a rise in stock price."
+    }
+  ]
+}
